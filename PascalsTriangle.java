@@ -1,7 +1,11 @@
+import java.util.*;
 public class PascalsTriangle{
     public static void main(String[] args) {
-        for(int i=0;i<=5;i++){
-            for(int s=0;s<5-i;s++){
+        System.out.println("Enter the number of lines");
+        Scanner sc= new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=0;i<n;i++){
+            for(int s=0;s<n-i;s++){
                 System.out.print(" ");
             }
             int num =1;
